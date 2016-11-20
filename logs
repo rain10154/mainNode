@@ -1,0 +1,706 @@
+Sun, 25 Sep 2016 22:56:55 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 22:57:40 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Sun, 25 Sep 2016 22:57:40 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 22:57:40] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 22:57:40] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 22:58:14 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 22:58:52 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Sun, 25 Sep 2016 22:58:52 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 22:58:52] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 22:58:52] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 22:59:23 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 29, in addUser
+    user.addUser(test, time)
+  File "/Users/rain/python/mainNode/user.py", line 24, in addUser
+    redisop.addUser(newName, newPassword, days)
+  File "/Users/rain/python/mainNode/redisop.py", line 16, in addUser
+    Redis.hexists('user', node+":"+port)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+Sun, 25 Sep 2016 22:59:23 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 22:59:23] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 22:59:23] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:00:42 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:01:07 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:01:14 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+Sun, 25 Sep 2016 23:01:14 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:01:14] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:01:14] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:02:16 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+Sun, 25 Sep 2016 23:02:16 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:02:16] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:02:16] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:02:27 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:02:29 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:03:17 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+Sun, 25 Sep 2016 23:03:17 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:03:17] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:03:17] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:04:16 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:04:40 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+Sun, 25 Sep 2016 23:04:40 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:04:40] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:04:40] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:07:12 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:07:21 app.py[line:1423] ERROR Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+__main__    : ERROR    Exception on /addUser [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1577, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 847, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/Library/Python/2.7/site-packages/werkzeug/wrappers.py", line 57, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/Library/Python/2.7/site-packages/werkzeug/test.py", line 871, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'int' object is not callable
+Sun, 25 Sep 2016 23:07:21 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:07:21] "POST /addUser HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:07:21] "POST /addUser HTTP/1.1" 500 -
+Sun, 25 Sep 2016 23:07:47 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:07:53 _internal.py[line:87] INFO 127.0.0.1 - - [25/Sep/2016 23:07:53] "POST /addUser HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [25/Sep/2016 23:07:53] "POST /addUser HTTP/1.1" 200 -
+Sun, 25 Sep 2016 23:23:40 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:24:51 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Sun, 25 Sep 2016 23:25:49 task.py[line:32] INFO time is :2016-09-25 23:25:45.982383
+product     : INFO     time is :2016-09-25 23:25:45.982383
+Sun, 25 Sep 2016 23:26:09 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:26:49 task.py[line:32] INFO time is :2016-09-25 23:26:48.734543
+product     : INFO     time is :2016-09-25 23:26:48.734543
+Sun, 25 Sep 2016 23:27:29 task.py[line:32] INFO time is :2016-09-25 23:27:29.524890
+product     : INFO     time is :2016-09-25 23:27:29.524890
+Sun, 25 Sep 2016 23:28:00 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:01 task.py[line:32] INFO time is :2016-09-25 23:28:01.735236
+product     : INFO     time is :2016-09-25 23:28:01.735236
+Sun, 25 Sep 2016 23:28:01 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:02 task.py[line:32] INFO time is :2016-09-25 23:28:02.743804
+product     : INFO     time is :2016-09-25 23:28:02.743804
+Sun, 25 Sep 2016 23:28:02 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:03 task.py[line:32] INFO time is :2016-09-25 23:28:03.753097
+product     : INFO     time is :2016-09-25 23:28:03.753097
+Sun, 25 Sep 2016 23:28:03 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:04 task.py[line:32] INFO time is :2016-09-25 23:28:04.767080
+product     : INFO     time is :2016-09-25 23:28:04.767080
+Sun, 25 Sep 2016 23:28:04 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:05 task.py[line:32] INFO time is :2016-09-25 23:28:05.781555
+product     : INFO     time is :2016-09-25 23:28:05.781555
+Sun, 25 Sep 2016 23:28:05 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:06 task.py[line:32] INFO time is :2016-09-25 23:28:06.792532
+product     : INFO     time is :2016-09-25 23:28:06.792532
+Sun, 25 Sep 2016 23:28:06 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:07 task.py[line:32] INFO time is :2016-09-25 23:28:07.802257
+product     : INFO     time is :2016-09-25 23:28:07.802257
+Sun, 25 Sep 2016 23:28:07 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:08 task.py[line:32] INFO time is :2016-09-25 23:28:08.815891
+product     : INFO     time is :2016-09-25 23:28:08.815891
+Sun, 25 Sep 2016 23:28:08 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:09 task.py[line:32] INFO time is :2016-09-25 23:28:09.824383
+product     : INFO     time is :2016-09-25 23:28:09.824383
+Sun, 25 Sep 2016 23:28:09 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:10 task.py[line:32] INFO time is :2016-09-25 23:28:10.833662
+product     : INFO     time is :2016-09-25 23:28:10.833662
+Sun, 25 Sep 2016 23:28:10 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:11 task.py[line:32] INFO time is :2016-09-25 23:28:11.843507
+product     : INFO     time is :2016-09-25 23:28:11.843507
+Sun, 25 Sep 2016 23:28:11 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:12 task.py[line:32] INFO time is :2016-09-25 23:28:12.854748
+product     : INFO     time is :2016-09-25 23:28:12.854748
+Sun, 25 Sep 2016 23:28:12 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:13 task.py[line:32] INFO time is :2016-09-25 23:28:13.867880
+product     : INFO     time is :2016-09-25 23:28:13.867880
+Sun, 25 Sep 2016 23:28:13 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:28:14 task.py[line:32] INFO time is :2016-09-25 23:28:14.880680
+product     : INFO     time is :2016-09-25 23:28:14.880680
+Sun, 25 Sep 2016 23:28:14 task.py[line:37] INFO day is :0
+product     : INFO     day is :0
+Sun, 25 Sep 2016 23:57:48 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:00:04 task.py[line:31] INFO time is :2016-09-26 00:00:04.419501
+product     : INFO     time is :2016-09-26 00:00:04.419501
+Mon, 26 Sep 2016 00:00:04 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:16 task.py[line:31] INFO time is :2016-09-26 00:00:16.724108
+product     : INFO     time is :2016-09-26 00:00:16.724108
+Mon, 26 Sep 2016 00:00:16 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:25 task.py[line:31] INFO time is :2016-09-26 00:00:25.229485
+product     : INFO     time is :2016-09-26 00:00:25.229485
+Mon, 26 Sep 2016 00:00:25 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:27 task.py[line:31] INFO time is :2016-09-26 00:00:27.539016
+product     : INFO     time is :2016-09-26 00:00:27.539016
+Mon, 26 Sep 2016 00:00:27 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:35 task.py[line:31] INFO time is :2016-09-26 00:00:35.280972
+product     : INFO     time is :2016-09-26 00:00:35.280972
+Mon, 26 Sep 2016 00:00:35 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:38 task.py[line:31] INFO time is :2016-09-26 00:00:38.494775
+product     : INFO     time is :2016-09-26 00:00:38.494775
+Mon, 26 Sep 2016 00:00:38 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:44 task.py[line:31] INFO time is :2016-09-26 00:00:44.030555
+product     : INFO     time is :2016-09-26 00:00:44.030555
+Mon, 26 Sep 2016 00:00:44 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:47 task.py[line:31] INFO time is :2016-09-26 00:00:47.617740
+product     : INFO     time is :2016-09-26 00:00:47.617740
+Mon, 26 Sep 2016 00:00:47 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:50 task.py[line:31] INFO time is :2016-09-26 00:00:50.774383
+product     : INFO     time is :2016-09-26 00:00:50.774383
+Mon, 26 Sep 2016 00:00:50 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:54 task.py[line:31] INFO time is :2016-09-26 00:00:54.046231
+product     : INFO     time is :2016-09-26 00:00:54.046231
+Mon, 26 Sep 2016 00:00:54 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:00:58 task.py[line:31] INFO time is :2016-09-26 00:00:58.645277
+product     : INFO     time is :2016-09-26 00:00:58.645277
+Mon, 26 Sep 2016 00:00:58 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:02 task.py[line:31] INFO time is :2016-09-26 00:01:02.663145
+product     : INFO     time is :2016-09-26 00:01:02.663145
+Mon, 26 Sep 2016 00:01:02 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:17 task.py[line:31] INFO time is :2016-09-26 00:01:17.579932
+product     : INFO     time is :2016-09-26 00:01:17.579932
+Mon, 26 Sep 2016 00:01:17 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:21 task.py[line:31] INFO time is :2016-09-26 00:01:21.117292
+product     : INFO     time is :2016-09-26 00:01:21.117292
+Mon, 26 Sep 2016 00:01:21 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:35 task.py[line:31] INFO time is :2016-09-26 00:01:34.623791
+product     : INFO     time is :2016-09-26 00:01:34.623791
+Mon, 26 Sep 2016 00:01:35 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:39 task.py[line:31] INFO time is :2016-09-26 00:01:39.014413
+product     : INFO     time is :2016-09-26 00:01:39.014413
+Mon, 26 Sep 2016 00:01:39 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:43 task.py[line:31] INFO time is :2016-09-26 00:01:42.117073
+product     : INFO     time is :2016-09-26 00:01:42.117073
+Mon, 26 Sep 2016 00:01:43 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:46 task.py[line:31] INFO time is :2016-09-26 00:01:45.989231
+product     : INFO     time is :2016-09-26 00:01:45.989231
+Mon, 26 Sep 2016 00:01:46 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:50 task.py[line:31] INFO time is :2016-09-26 00:01:49.404704
+product     : INFO     time is :2016-09-26 00:01:49.404704
+Mon, 26 Sep 2016 00:01:50 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:01:56 task.py[line:31] INFO time is :2016-09-26 00:01:55.776524
+product     : INFO     time is :2016-09-26 00:01:55.776524
+Mon, 26 Sep 2016 00:01:56 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:03 task.py[line:31] INFO time is :2016-09-26 00:02:00.430776
+product     : INFO     time is :2016-09-26 00:02:00.430776
+Mon, 26 Sep 2016 00:02:03 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:05 task.py[line:31] INFO time is :2016-09-26 00:02:05.510551
+product     : INFO     time is :2016-09-26 00:02:05.510551
+Mon, 26 Sep 2016 00:02:05 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:07 task.py[line:31] INFO time is :2016-09-26 00:02:07.515051
+product     : INFO     time is :2016-09-26 00:02:07.515051
+Mon, 26 Sep 2016 00:02:07 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:09 task.py[line:31] INFO time is :2016-09-26 00:02:09.518806
+product     : INFO     time is :2016-09-26 00:02:09.518806
+Mon, 26 Sep 2016 00:02:09 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:11 task.py[line:31] INFO time is :2016-09-26 00:02:11.523400
+product     : INFO     time is :2016-09-26 00:02:11.523400
+Mon, 26 Sep 2016 00:02:11 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:13 task.py[line:31] INFO time is :2016-09-26 00:02:13.528076
+product     : INFO     time is :2016-09-26 00:02:13.528076
+Mon, 26 Sep 2016 00:02:13 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:15 task.py[line:31] INFO time is :2016-09-26 00:02:15.542236
+product     : INFO     time is :2016-09-26 00:02:15.542236
+Mon, 26 Sep 2016 00:02:15 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:17 task.py[line:31] INFO time is :2016-09-26 00:02:17.548357
+product     : INFO     time is :2016-09-26 00:02:17.548357
+Mon, 26 Sep 2016 00:02:17 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:19 task.py[line:31] INFO time is :2016-09-26 00:02:19.557013
+product     : INFO     time is :2016-09-26 00:02:19.557013
+Mon, 26 Sep 2016 00:02:19 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:21 task.py[line:31] INFO time is :2016-09-26 00:02:21.563777
+product     : INFO     time is :2016-09-26 00:02:21.563777
+Mon, 26 Sep 2016 00:02:21 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:23 task.py[line:31] INFO time is :2016-09-26 00:02:23.568233
+product     : INFO     time is :2016-09-26 00:02:23.568233
+Mon, 26 Sep 2016 00:02:23 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:25 task.py[line:31] INFO time is :2016-09-26 00:02:25.572411
+product     : INFO     time is :2016-09-26 00:02:25.572411
+Mon, 26 Sep 2016 00:02:25 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:27 task.py[line:31] INFO time is :2016-09-26 00:02:27.579316
+product     : INFO     time is :2016-09-26 00:02:27.579316
+Mon, 26 Sep 2016 00:02:27 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:29 task.py[line:31] INFO time is :2016-09-26 00:02:29.586385
+product     : INFO     time is :2016-09-26 00:02:29.586385
+Mon, 26 Sep 2016 00:02:29 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:31 task.py[line:31] INFO time is :2016-09-26 00:02:31.592442
+product     : INFO     time is :2016-09-26 00:02:31.592442
+Mon, 26 Sep 2016 00:02:31 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:33 task.py[line:31] INFO time is :2016-09-26 00:02:33.595698
+product     : INFO     time is :2016-09-26 00:02:33.595698
+Mon, 26 Sep 2016 00:02:33 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:35 task.py[line:31] INFO time is :2016-09-26 00:02:35.600667
+product     : INFO     time is :2016-09-26 00:02:35.600667
+Mon, 26 Sep 2016 00:02:35 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:37 task.py[line:31] INFO time is :2016-09-26 00:02:37.606308
+product     : INFO     time is :2016-09-26 00:02:37.606308
+Mon, 26 Sep 2016 00:02:37 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:46 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:02:47 task.py[line:31] INFO time is :2016-09-26 00:02:47.730519
+product     : INFO     time is :2016-09-26 00:02:47.730519
+Mon, 26 Sep 2016 00:02:47 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:49 task.py[line:31] INFO time is :2016-09-26 00:02:49.736194
+product     : INFO     time is :2016-09-26 00:02:49.736194
+Mon, 26 Sep 2016 00:02:49 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:51 task.py[line:31] INFO time is :2016-09-26 00:02:51.743565
+product     : INFO     time is :2016-09-26 00:02:51.743565
+Mon, 26 Sep 2016 00:02:51 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:53 task.py[line:31] INFO time is :2016-09-26 00:02:53.749339
+product     : INFO     time is :2016-09-26 00:02:53.749339
+Mon, 26 Sep 2016 00:02:53 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:55 task.py[line:31] INFO time is :2016-09-26 00:02:55.754461
+product     : INFO     time is :2016-09-26 00:02:55.754461
+Mon, 26 Sep 2016 00:02:55 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:02:59 task.py[line:31] INFO time is :2016-09-26 00:02:59.814852
+product     : INFO     time is :2016-09-26 00:02:59.814852
+Mon, 26 Sep 2016 00:02:59 task.py[line:36] INFO day is :0
+product     : INFO     day is :0
+Mon, 26 Sep 2016 00:03:27 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:03:32 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:03:32] "POST /addUser HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:03:32] "POST /addUser HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:04:25 app.py[line:1423] ERROR Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 42, in resetFlow
+    oldFlow = json.loads(redisop.getFlow(port))
+  File "/Users/rain/python/mainNode/redisop.py", line 37, in getFlow
+    return Redis.hget('flow', node + ":" + port)
+TypeError: cannot concatenate 'str' and 'int' objects
+__main__    : ERROR    Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 42, in resetFlow
+    oldFlow = json.loads(redisop.getFlow(port))
+  File "/Users/rain/python/mainNode/redisop.py", line 37, in getFlow
+    return Redis.hget('flow', node + ":" + port)
+TypeError: cannot concatenate 'str' and 'int' objects
+Mon, 26 Sep 2016 00:04:25 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:04:25] "POST /flow HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:04:25] "POST /flow HTTP/1.1" 500 -
+Mon, 26 Sep 2016 00:04:49 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:05:02 app.py[line:1423] ERROR Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 42, in resetFlow
+    oldFlow = json.loads(redisop.getFlow(port))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+__main__    : ERROR    Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 42, in resetFlow
+    oldFlow = json.loads(redisop.getFlow(port))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+Mon, 26 Sep 2016 00:05:02 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:05:02] "POST /flow HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:05:02] "POST /flow HTTP/1.1" 500 -
+Mon, 26 Sep 2016 00:05:33 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:06:29 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:06:47 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:07:13 app.py[line:1423] ERROR Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 50, in resetFlow
+    redisop.setFlow(port, json.dumps(data))
+  File "/Users/rain/python/mainNode/redisop.py", line 44, in setFlow
+    return Redis.hset('flow'. node+":"+port, value)
+AttributeError: 'str' object has no attribute 'node'
+__main__    : ERROR    Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 50, in resetFlow
+    redisop.setFlow(port, json.dumps(data))
+  File "/Users/rain/python/mainNode/redisop.py", line 44, in setFlow
+    return Redis.hset('flow'. node+":"+port, value)
+AttributeError: 'str' object has no attribute 'node'
+Mon, 26 Sep 2016 00:07:13 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:07:13] "POST /flow HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:07:13] "POST /flow HTTP/1.1" 500 -
+Mon, 26 Sep 2016 00:07:52 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:07:57 app.py[line:1423] ERROR Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 50, in resetFlow
+    redisop.setFlow(port, json.dumps(data))
+  File "/Users/rain/python/mainNode/redisop.py", line 45, in setFlow
+    return Redis.hset('flow'. node+":"+port, value)
+AttributeError: 'str' object has no attribute 'node'
+__main__    : ERROR    Exception on /flow [POST]
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Python/2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rain/python/mainNode/mainNode.py", line 50, in resetFlow
+    redisop.setFlow(port, json.dumps(data))
+  File "/Users/rain/python/mainNode/redisop.py", line 45, in setFlow
+    return Redis.hset('flow'. node+":"+port, value)
+AttributeError: 'str' object has no attribute 'node'
+Mon, 26 Sep 2016 00:07:57 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:07:57] "POST /flow HTTP/1.1" 500 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:07:57] "POST /flow HTTP/1.1" 500 -
+Mon, 26 Sep 2016 00:08:12 _internal.py[line:87] INFO  * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+werkzeug    : INFO      * Running on http://127.0.0.1:10000/ (Press CTRL+C to quit)
+Mon, 26 Sep 2016 00:08:16 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:08:16] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:08:16] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:08:29 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:08:29] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:08:29] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:02 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:02] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:02] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:10 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:10] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:10] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:14 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:14] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:14] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:31 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:31] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:31] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:40 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:40] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:40] "POST /flow HTTP/1.1" 200 -
+Mon, 26 Sep 2016 00:09:53 _internal.py[line:87] INFO 127.0.0.1 - - [26/Sep/2016 00:09:53] "POST /flow HTTP/1.1" 200 -
+werkzeug    : INFO     127.0.0.1 - - [26/Sep/2016 00:09:53] "POST /flow HTTP/1.1" 200 -
