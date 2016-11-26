@@ -28,8 +28,9 @@ def addUser(test=False, time=1):
 
 def addNodesUsers(data):
     nodes = redisop.getAllNodes()
-    if nodes is None:
+    if nodes is None or len(nodes) == 0:
         logger.info('ERROR! no nodes in add users')
+        return
     for k,v in nodes.item():
         value = json.loads(v)
         url = 'http://' + str(value['ip']) + ':' + str(value['port']) + '/addUser'
