@@ -15,7 +15,10 @@ user=>0:{port}->{
                     'p':''
                 }
 
+yum install python-setuptools && easy_install pip
+pip install shadowsocks
+
 sudo pip install redis
 sudo pip install Flask
-sudo pip install request
+sudo pip install requests
 sudo pip install jwt

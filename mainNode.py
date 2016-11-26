@@ -86,4 +86,4 @@ def getHost():
 if __name__ == '__main__':
     port = int(config.get('port'))
     task.myThread().start()
-    app.run(port=port, debug=False)
+    app.run(host="0.0.0.0", port=port, debug=False)
