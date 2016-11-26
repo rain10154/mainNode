@@ -11,7 +11,6 @@ import config
 
 lock = thread.allocate_lock()
 app = Flask(__name__)
-fileName = "mainConfig"
 secret = config.get('secret')
 
 
@@ -85,13 +84,6 @@ def getHost():
 
 
 if __name__ == '__main__':
-    #query config
-    fp = open(fileName, 'r')
-    config = json.load(fp)
-    fp.close()
-    secret = config['secret']
-    port = int(config['port'])
-
+    port = int(config.get('port'))
     task.myThread().start()
-
     app.run(port=port, debug=False)

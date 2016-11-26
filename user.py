@@ -1,6 +1,5 @@
 import random
 from common import logger
-import redisop
 import requests
 import redisop
 import json
@@ -31,7 +30,8 @@ def addNodesUsers(data):
     if nodes is None:
         logger.info('ERROR! no nodes in add users')
     for k,v in nodes.item():
-        url = 'http://' + v['ip'] + ':' + port + '/addUser'
+        value = json.loads(v)
+        url = 'http://' + str(value['ip']) + ':' + str(value['port']) + '/addUser'
         requests.post(url, data=data, timeout=60)
 
 

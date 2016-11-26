@@ -2,8 +2,8 @@ import redis,json
 from common import logger
 
 host = "127.0.0.1"
-port = "16379"
-Redis = redis.Redis(host=host, port=port, db=2, password="123456")
+port = "6379"
+Redis = redis.Redis(host=host, port=port, db=2, password="lokfhdafjdwialfdn")
 
 
 def getusers():

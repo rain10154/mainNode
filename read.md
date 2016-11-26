@@ -29,3 +29,5 @@ main node
 
 
 sudo pip install json
+sudo pip install redis,Flask,request,jwt
+
