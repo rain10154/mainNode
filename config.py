@@ -3,7 +3,7 @@
 import json
 filename = 'config'
 fp = open(filename)
-obj = json.loads(fp)
+obj = json.load(fp)
 fp.close()
 
 def get(type):

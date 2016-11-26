@@ -28,6 +28,7 @@ main node
 
 
 
-sudo pip install json
-sudo pip install redis,Flask,request,jwt
-
+sudo pip install redis
+sudo pip install Flask
+sudo pip install request
+sudo pip install jwt
