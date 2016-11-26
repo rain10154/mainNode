@@ -4,6 +4,6 @@
     "month":30,
     "year":12,
     "slave_port" = 8000,
-    "secret":"",
+    "secret":"rain12345",
     "port":6000
 }
