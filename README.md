@@ -21,4 +21,4 @@ pip install shadowsocks
 sudo pip install redis
 sudo pip install Flask
 sudo pip install requests
-sudo pip install jwt
+sudo pip install PyJWT

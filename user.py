@@ -9,7 +9,8 @@ commonStr = config.get('commonStr')
 passwordSize = config.get('passwordSize')
 month = config.get('month')
 year = config.get('year')
-port = str(config.get('slave_port'))
+
+port = int(config.get('user_name'))
 
 
 def addUser(test=False, time=1):
@@ -48,7 +49,7 @@ def deleteNodesUsers(port):
 
 
 def generateNewUser(userDict):
-    newName = ''
+    newName = 0
     newPassword = ''
 
     while(1):
@@ -56,7 +57,7 @@ def generateNewUser(userDict):
         newName = port + 1
         port = port + 1
 
-        if (userDict.has_key("0:"+str(port))):
+        if (userDict.has_key("0:"+str(newName))):
             continue
 
         i = 1
