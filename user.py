@@ -46,6 +46,7 @@ def deleteNodesUsers(port):
         }
         requests.post()
 
+
 def generateNewUser(userDict):
     newName = ''
     newPassword = ''
