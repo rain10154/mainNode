@@ -31,9 +31,9 @@ def addUser():
         'port':newport,
         'password':newPassword
     }
-    data = jwt.encode(data, secret)
-    user.addNodesUsers(data)
-    return str(newport)
+    temp = jwt.encode(data, secret)
+    user.addNodesUsers(temp)
+    return json.dumps(data)
 
 
 @app.route('/flow', methods=['POST'])
@@ -68,7 +68,7 @@ def postHost():
         'port':port
     }
     redisop.postHostInfo(mac, data)
-
+    return "ok"
 
 @app.route('/host', methods=['GET'])
 def getHost():
