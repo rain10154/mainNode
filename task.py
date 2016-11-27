@@ -12,6 +12,7 @@ secret = config.get("secret")
 
 headers = {'content-type': 'application/json'}
 
+task_time = config.get("task_time")
 
 class myThread (threading.Thread):
     def __init__(self):
@@ -24,10 +25,10 @@ class myThread (threading.Thread):
     def taskLoad(self):
         self.timer_start()
         while True:
-            time.sleep(60)
+            time.sleep(10)
 
     def timer_start(self):
-        t = threading.Timer(60*60, self.test_func)
+        t = threading.Timer(int(task_time), self.test_func)
         t.start()
 
     def test_func(self):
@@ -36,13 +37,31 @@ class myThread (threading.Thread):
         day = int((newTime - self.oldTime).days)
         if day != 0:
             self.lowDays()
-
+        self.checkFlow()
         logger.info("day is :%s", day)
         self.oldTime = newTime
         self.timer_start()
 
+
+    def checkFlow(self):
+        logger.info('task check low flows begin!!!!')
+        users = redisop.getusers()
+        deleteUsers = []
+        for k,v in users.items():
+            value = json.loads(v)
+            if value.get("f") is None:
+                logger.info("no flow, port:" + str(k))
+            else:
+                flow = value.get("f")
+                useFlow = redisop.getFlow(str(k).split(":")[1])
+                if int(useFlow) >= int(flow):
+                    logger.info("flow used!delete port:" + str(k) + ', use flow:' + str(useFlow) + ', ori flow:' + str(flow))
+                    deleteUsers.append(str(k).split(":")[1])
+        if len(deleteUsers) != 0:
+            self.deleteUsers(deleteUsers)
+
     def lowDays(self):
-        logger.info('task check begin!!!!')
+        logger.info('task check low days begin!!!!')
         users = redisop.getusers()
         delUsers = []
         for k,v in users.items():
@@ -66,7 +85,7 @@ class myThread (threading.Thread):
 
         for k, v in nodes.items():
             value = json.loads(v)
-            url = 'http://' + value['ip'] + '/:' + value['port'] + '/deleteUser'
+            url = 'http://' + str(value['ip']) + '/:' + str(value['port']) + '/deleteUser'
             data = delUsers,
             requests.post(url=url, data=json.dumps(data), timeout=3)
 
