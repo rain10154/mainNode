@@ -46,7 +46,7 @@ def resetFlow():
         mac = value['mac']
         flows = value['flow']
         time = value['time']
-        for k,v in flows.item():
+        for k,v in flows.items():
             redisop.setFlow(mac, time, k, v)
     finally:
         lock.release()
