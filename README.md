@@ -6,7 +6,7 @@ nodes=>{mac}->{
               }
 
 flow:
-flow=>0:{port}->{f}
+flow=>0:{port}->${f}
 
 
 user:

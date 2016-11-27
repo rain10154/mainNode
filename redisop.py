@@ -60,14 +60,7 @@ def setFlow(mac, time, port, value, node='0'):
       port = str(port)
       info = getHostInfo(mac)
       if info is None:
-         logger.error('ERROR!no host info!!')
-      oldTime = info['time']
-      oldFlow = getFlow(port)
-      newFlow = 0
-      if oldTime == time:
-            newFlow = value
-      else:
-            newFlow = oldFlow + value
-
-      return Redis.hset('flow', node+":"+port, newFlow)
+            logger.error('ERROR!no host info!!')
+            return
+      return Redis.hincrbyfloat('flow', node+":"+port, value)
 
