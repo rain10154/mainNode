@@ -54,6 +54,8 @@ class myThread (threading.Thread):
             else:
                 flow = value.get("f")
                 useFlow = redisop.getFlow(str(k).split(":")[1])
+                if useFlow is None:
+                    continue
                 if int(useFlow) >= int(flow):
                     logger.info("flow used!delete port:" + str(k) + ', use flow:' + str(useFlow) + ', ori flow:' + str(flow))
                     deleteUsers.append(str(k).split(":")[1])
