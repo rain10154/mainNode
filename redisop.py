@@ -14,7 +14,7 @@ def deleteUser(port, node=0):
       return Redis.hdel('user', node+":"+port)
 
 
-def addUser(port, passwd, days, node=0):
+def addUser(port, passwd, days, flow, node=0):
       port = str(port)
       node = str(node)
       res = Redis.hexists('user', node+":"+port)
@@ -22,7 +22,8 @@ def addUser(port, passwd, days, node=0):
             return
       temp = {
             "d":days,
-            "p":passwd
+            "p":passwd,
+            "f":flow
       }
       Redis.hset('user', node+":"+port, json.dumps(temp))
 
@@ -36,8 +37,9 @@ def getAllNodes():
 
 
 def postHostInfo(mac, value):
+      res = Redis.hget("nodes", mac)
       Redis.hset('nodes', mac, json.dumps(value))
-
+      return res
 
 def getHostInfo(mac):
       return Redis.hget('nodes', mac)

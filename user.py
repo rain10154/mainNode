@@ -13,15 +13,15 @@ year = config.get('year')
 port = int(config.get('user_name'))
 
 
-def addUser(test=False, time=1):
+def addUser(test=False, time=1, flow=1000):
     userDict = redisop.getusers()
     (newName, newPassword) = generateNewUser(userDict)
     if test is True:
         days = 3
-        redisop.addUser(newName, newPassword, days)
+        redisop.addUser(newName, newPassword, flow, days)
     else:
         days = time * month
-        redisop.addUser(newName, newPassword, days)
+        redisop.addUser(newName, newPassword, flow, days)
     logger.debug('add newUser:' + str(newName))
     return (newName, newPassword)
 

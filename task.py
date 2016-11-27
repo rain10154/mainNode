@@ -6,6 +6,10 @@ import redisop
 import json
 import requests
 
+import config
+
+secret = config.get("secret")
+
 headers = {'content-type': 'application/json'}
 
 
@@ -38,18 +42,18 @@ class myThread (threading.Thread):
         self.timer_start()
 
     def lowDays(self):
-        logger.info('low days!')
+        logger.info('task check begin!!!!')
         users = redisop.getusers()
         delUsers = []
-        for key in users:
-            value = json.loads(users[key])
+        for k,v in users.items():
+            value = json.loads(v)
             days = int(value['d'])
             if days > 1:
                 days = days-1
                 value['d'] = days
-                redisop.updateUser(key, json.dumps(value))
+                redisop.updateUser(k, json.dumps(value))
             else:
-                temp = str(key).split(":")
+                temp = str(k).split(":")
                 tempPort = int(temp[1])
                 delUsers.append(tempPort)
 
@@ -60,8 +64,9 @@ class myThread (threading.Thread):
         logger.info('delete users:' + json.dumps(delUsers))
         nodes = redisop.getAllNodes()
 
-        for key in nodes:
-            url = 'http://' + key + '/:' + nodes[key] + '/deleteUser'
-            data = delUsers
-            requests.post(url=url, data=data, headers=headers, timeout=3)
+        for k, v in nodes.items():
+            value = json.loads(v)
+            url = 'http://' + value['ip'] + '/:' + value['port'] + '/deleteUser'
+            data = delUsers,
+            requests.post(url=url, data=json.dumps(data), timeout=3)
 

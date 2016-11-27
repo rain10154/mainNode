@@ -12,7 +12,8 @@ flow=>0:{port}->${f}
 user:
 user=>0:{port}->{
                     'd':'',
-                    'p':''
+                    'p':'',
+                    'f':
                 }
 
 yum install python-setuptools && easy_install pip

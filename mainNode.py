@@ -26,7 +26,8 @@ def addUser():
     value = request.get_json()
     test = value['test']
     time = value['time']
-    (newport,newPassword) = user.addUser(test, time)
+    flow = value['flow']
+    (newport,newPassword) = user.addUser(test, time, flow)
     data = {
         'port':newport,
         'password':newPassword
@@ -67,8 +68,11 @@ def postHost():
         'ip':ip,
         'port':port
     }
-    redisop.postHostInfo(mac, data)
-    return "ok"
+    res = redisop.postHostInfo(mac, data)
+    if res is None:
+        return {}
+    else:
+        return res
 
 @app.route('/host', methods=['GET'])
 def getHost():
